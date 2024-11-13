@@ -16,6 +16,6 @@ To create this project, follow these steps:
 
 1. **Initialize the Project**
    ```bash
-   mkdir first-day-node-app
-   cd first-day-node-app
    npm init -y
+   npm i express
+   nodemon index.js
