@@ -1,6 +1,6 @@
-# 1st Day - Learning Node.js and Express.js
+# 1st Day
 
-This is a simple Node.js and Express.js app created on my first day of learning backend development. The project covers:
+The project covers:
 - Basics of Node.js
 - Setting up an Express server
 - GET and POST methods
