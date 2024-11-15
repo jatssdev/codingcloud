@@ -39,6 +39,29 @@ app.post('/register', async (req, res) => {
     }
 })
 
+app.delete('/user/:id', async (req, res) => {
+    let id = req.params.id
+    let response = await User.findByIdAndDelete(id)
+    if (response) {
+        res.send('user deleted')
+    } else {
+        res.send('Error :  database error')
+    }
+})
+
+app.put('/user/:id', async (req, res) => {
+    let id = req.params.id
+    let body = req.body
+
+
+    let response = await User.findByIdAndUpdate(id, { name: body.name, email: body.email })
+    if (response) {
+        res.send('user updated')
+    } else {
+        res.send('Error : database error')
+    }
+})
+
 // let user = {
 //     name: 'jatin',
 //     email: 'jatin@gmail.com'
